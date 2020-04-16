@@ -14,7 +14,7 @@
     <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
     <meta name="author" content="PPType" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Homepage Template for Semantic-UI</title>
+    <title>Centrum Logos</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
@@ -98,6 +98,18 @@
         display: none;
       }
 
+      .ui.secondary.inverted.pointing.menu {
+        border-width: 0;
+      }
+      
+      .ui.secondary.inverted.pointing.menu {
+        border-color: transparent;
+      }
+      
+      .ui.secondary.pointing.menu {
+        border-bottom: none;
+      }
+
       @media only screen and (max-width: 700px) {
         .ui.fixed.menu {
           display: none !important;
@@ -130,92 +142,21 @@
   </head>
 
   <body id="root">
-    <div class="ui large top fixed hidden menu">
-      <div class="ui container">
-        <a class="active item">Home</a> <a class="item">Work</a>
-        <a class="item">Company</a> <a class="item">Careers</a>
-        <div class="right menu">
-          <div class="item"><a class="ui button">Log in</a></div>
-          <div class="item"><a class="ui primary button">Sign Up</a></div>
-        </div>
-      </div>
-    </div>
-    <!--Sidebar Menu-->
-    <div class="ui vertical inverted sidebar menu">
-      <a class="active item">Home</a> <a class="item">Work</a>
-      <a class="item">Company</a> <a class="item">Careers</a>
-      <a class="item">Login</a> <a class="item">Signup</a>
-    </div>
-    <!--Page Contents-->
     <div class="pusher">
       <div class="ui inverted vertical masthead center aligned segment">
         <div class="ui container">
           <div class="ui large secondary inverted pointing menu">
-            <a class="toc item"><i class="sidebar icon"></i></a>
-            <a class="active item">Home</a> <a class="item">Work</a>
-            <a class="item">Company</a> <a class="item">Careers</a>
             <div class="right item">
-              <a class="ui inverted button">Log in</a>
-              <a class="ui inverted button">Sign Up</a>
+              <a href="#footer" class="ui inverted button">Kontakt</a>
             </div>
           </div>
         </div>
         <div class="ui text container">
           <h1 class="ui inverted header">LOGOS</h1>
           <h2>Centrum wsparcia psychicznego i&nbsp;duchowego</h2>
-          <div class="ui huge primary button">
+          <a href="https://logos.erecepcja.eu/panel_klienta.html" class="ui huge primary button">
             e-recepcja <i class="right arrow icon"></i>
-          </div>
-        </div>
-      </div>
-      <div class="ui vertical stripe segment">
-        <div class="ui middle aligned stackable grid container">
-          <div class="row">
-            <div class="eight wide column">
-              <h3 class="ui header">We Help Companies and Companions</h3>
-              <p>
-                We can give your company superpowers to do things that they
-                never thought possible. Let us delight your customers and
-                empower your needs...through pure data analytics.
-              </p>
-              <h3 class="ui header">We Make Bananas That Can Dance</h3>
-              <p>
-                Yes that's right, you thought it was the stuff of dreams, but
-                even bananas can be bioengineered.
-              </p>
-            </div>
-            <div class="six wide right floated column">
-              <img
-                class="ui large bordered rounded image"
-                src="./static/images/wireframe/white-image.png"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="center aligned column">
-              <a class="ui huge button">Check Them Out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ui vertical stripe quote segment">
-        <div class="ui equal width stackable internally celled grid">
-          <div class="center aligned row">
-            <div class="column">
-              <h3>"What a Company"</h3>
-              <p>That is what they all say about us</p>
-            </div>
-            <div class="column">
-              <h3>"I shouldn't have gone with their competitor."</h3>
-              <p>
-                <img
-                  class="ui avatar image"
-                  src="./static/images/avatar/nan.jpg"
-                />
-                <b>Nan</b> Chief Fun Officer Acme Toys
-              </p>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="ui vertical stripe segment">
@@ -225,19 +166,15 @@
             Poradnia funkcjonuje przy stowarzyszeniu Missio Quotidiana.
             Siedziba organizacji znajduje się przy Piotrkowskiej 80 w Łodzi.
           </p>
-          <a class="ui large button">Zobacz więcej</a>
-          <h4 class="ui horizontal header divider">
-            <a href="#root"> Case Studies</a>
-          </h4>
+          <a href="https://www.archidiecezja.lodz.pl/film/ks-arkadiusz-lechowski-o-stowarzyszeniu-missia-quotidiana-i-splot-cie-i-lodz-2019/" class="ui large button">Zobacz więcej</a>
           <h3 class="ui header">Nasi specjaliści</h3>
           <p>
             Osoby, które mogą udzielić Ci wsparcia to psychologowie, terapeuci oraz&nbsp;księża.
             Termin wizyty, rodzaj wsparcia możesz wybrać w serwisie e&#8209;recepcja.
           </p>
-          <a class="ui large button">I'm Still Quite Interested</a>
         </div>
       </div>
-      <div class="ui inverted vertical footer segment">
+      <div id="footer" class="ui inverted vertical footer segment">
         <div class="ui container">
           <div
             class="ui stackable inverted divided equal height stackable grid"
@@ -271,24 +208,5 @@
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
-    <!-- <script>
-      $(document).ready(function() {
-        // fix menu when passed
-        $(".masthead").visibility({
-          once: false,
-          onBottomPassed: function() {
-            $(".fixed.menu").transition("fade in");
-          },
-          onBottomPassedReverse: function() {
-            $(".fixed.menu").transition("fade out");
-          }
-        });
-
-        // create sidebar and attach to menu open
-        $(".ui.sidebar").sidebar("attach events", ".toc.item");
-      });
-    </script> -->
   </body>
 </html>
